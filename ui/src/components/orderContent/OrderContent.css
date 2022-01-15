@@ -1,0 +1,30 @@
+.orderContent{
+    display: flex;
+    justify-content: center;
+}
+.orderContentContainer{
+    box-sizing: border-box;
+    width: 1500px;
+max-width: 1500px;
+}
+.orderData{
+    box-sizing: border-box;
+    background-color: rgb(51, 58, 56);
+    font-size: 20px;
+    margin: 20px 0;
+    color: white;
+    font-weight: 500;
+    padding: 1.2rem .5rem;
+    line-height: 1.8rem;
+}
+.orderedProduct{
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 1.4rem 0;
+}
+.orderedProduct img{
+    width: 200px;
+    height: 220px;
+}

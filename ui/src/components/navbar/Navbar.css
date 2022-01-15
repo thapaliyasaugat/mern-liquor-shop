@@ -1,0 +1,53 @@
+.navbar{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    /* remove this */
+}
+.navbarContainer{
+    box-sizing: border-box;
+    width: 1500px;
+max-width: 1500px;
+display: flex;
+align-items: center;
+flex-wrap: wrap;
+justify-content: space-between;
+
+padding: 15px;
+}
+.navbarRight{
+    display: flex;
+    align-items: center;
+    width: 300px;
+    color: #555;
+    border: 1px solid #555;
+    font-size: 15px;
+    padding: 5px;
+}
+.navbarRight input{
+    background: transparent;
+    border: none;
+    outline: none;
+    margin-left: 5px;
+    font-size: 15px;
+    flex: 1;
+}
+@media screen and (max-width:650px){
+ .navbarRight{
+     width: 200px;
+ }   
+}
+@media screen and (max-width:300px){
+ .navbarRight{
+     width: 150px;
+ }   
+ .navbarLogo img{
+width: 150px;
+ }
+}
+.adminNav{
+    /* text-decoration: none; */
+    color: #232323;
+    font-size: 1.5rem;
+    cursor: pointer;
+}

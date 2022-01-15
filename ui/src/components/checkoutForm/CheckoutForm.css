@@ -1,0 +1,85 @@
+.checkoutForm{
+    display: flex;
+    justify-content: center;
+}
+.checkoutFormContainer{
+    width: 40%;
+    box-sizing: border-box;
+    padding: 20px;
+    margin: 20px 0;
+    border: 2px solid gray;
+    border-radius: 5px;  
+}
+.checkoutFormContainer h2{
+    font-size: 25px;
+    font-weight: 400;
+    letter-spacing: .3rem;
+    text-align: center;
+}
+.checkoutFormContainer h1{
+    text-align: center;
+    font-weight: 500;
+    margin-bottom: 12px;
+    text-decoration: underline;
+}
+.checkoutInput{
+ margin: 10px auto;
+}
+.checkoutInput input{
+    padding: 1rem 1.5rem;
+    font-size: 18px;
+    width: 100%;
+    box-sizing: border-box;
+}
+.checkoutFormContainer p{
+    /* text-align: center; */
+    font-size: 16px;
+}
+.checkoutAmt{
+    margin-top: 10px;
+    font-size: 20px;
+}
+.checkoutbottom{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+.checkoutbottom button{
+padding: 10px 15px;
+font-size: 23px;
+font-weight: 500;
+width: 46%;
+cursor: pointer;
+}
+
+@media screen and (max-width:1035px){
+    .checkoutFormContainer{
+        width: 50%;
+    }
+}
+@media screen and (max-width:780px){
+    .checkoutFormContainer{
+        width: 65%;
+    }
+}
+@media screen and (max-width:560px){
+    .checkoutFormContainer{
+        width: 90%;
+    }
+    .checkoutbottom{
+        flex-direction: column;
+    }
+    .checkoutbottom button{
+        width: 100%;
+        margin:15px 0;
+    }
+}
+@media screen and (max-width:380px){
+    .checkoutFormContainer{
+        width: 100%;
+    }
+    .checkoutFormContainer h2{
+        font-size:20px ;
+    }
+    
+}

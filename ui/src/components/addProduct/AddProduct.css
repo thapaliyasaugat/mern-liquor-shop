@@ -1,0 +1,41 @@
+.addProduct{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+.addProductContainer{
+    width: 100%;
+    max-width: 1300px;
+}
+.addProductForm{
+    width: 60%;
+    display: flex;
+flex-direction: column;
+margin: 1rem 0;
+}
+.addProductForm input{
+    width: 100%;
+    padding: 1.4rem .5rem;
+    border: none;
+    border-bottom: 1px solid #232323;
+    box-sizing: border-box;
+    outline: none;
+    font-size: 1.4rem;
+}
+.addProductForm button{
+    padding: 1rem 0;
+    font-size: 1.4rem;
+    border: none;
+    background-color: #837979;
+    cursor: pointer;
+}
+@media screen and (max-width:700px){
+    .addProductForm{
+        width: 100%;
+    }
+    .addProductForm input{
+        width: 100%;
+        padding: 1.1rem .3rem;        
+        font-size: 1.1rem;
+    }
+}

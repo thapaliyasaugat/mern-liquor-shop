@@ -1,0 +1,16 @@
+.addSlider{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    
+}
+.addSliderContainer{
+    width: 1500px;
+    max-width: 1500px;
+    box-sizing: border-box;
+    padding: 15px;
+}
+.addSliderContainer img{
+    width: 100%;
+    max-height: 800px;
+}
