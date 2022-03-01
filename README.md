@@ -3,13 +3,15 @@ Full Stack MERN app for liquor shop
 
 --Features
 
-+ user
++user 
+
 -->login
 -->register
 -->add to cart
 -->checkout
 
-+admin
++admin 
+
 -->login
 -->add product
 -->check order
