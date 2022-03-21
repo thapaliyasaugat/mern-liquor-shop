@@ -10,19 +10,26 @@ import { publicRequest } from '../../requsetMethod'
 import "./Products.css"
 const Products = () => {
     const location = useLocation();
-    // console.log(location)    
+    const [option, setOption] = useState("newest")
     const [products, setproducts] = useState(null)
     // console.log(products)
     const title = location.search.split("=")[1]
     useEffect(() => {
         const fetchData = async () => {
             const itemList = await publicRequest.get(`/product?category=${title}`)
+
+            if (option === "asc") {
+                setproducts(itemList.data.sort((a, b) => a.price - b.price))
+            }
+            if (option === "desc") {
+                setproducts(itemList.data.sort((a, b) => b.price - a.price))
+            }
             setproducts(itemList.data)
 
         }
         fetchData()
 
-    }, [title, location])
+    }, [title, location, option])
     // console.log(title)
     return (
 
@@ -35,10 +42,10 @@ const Products = () => {
 
                     <div className="productsPageDataTop">
                         <h2>Sort By </h2>
-                        <select>
-                            <option value="">newest</option>
-                            <option value="">Price Asc</option>
-                            <option value="">Price desc</option>
+                        <select onChange={(e) => setOption(e.target.value)}>
+                            <option value="newest">newest</option>
+                            <option value="asc">Price Asc</option>
+                            <option value="desc">Price desc</option>
                         </select>
                     </div>
                 </div>
